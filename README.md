@@ -39,21 +39,9 @@ Dabei werden:
 
 2. Projekt in das htdocs Verzeichnis von XAMPP verschieben
 
-3. Erstellen Sie eine Datenbank in phpMyAdmin
+3. Erstellen Sie eine Datenbank in phpMyAdmin. Sie dann die Datei database.sql aus dem Verzeichnis "sql" importieren.
 
-4. Erstellen Sie eine Tabelle in phpMyAdmin oder per CLI über diesen Befehl
-
-   ```
-   CREATE TABLE cars (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       marke VARCHAR(100) NOT NULL,
-       modell VARCHAR(100) NOT NULL,
-       baujahr YEAR NOT NULL,
-       kilometerstand INT NOT NULL,
-       kraftstoff ENUM('Benzin','Diesel','Elektro','Hybrid') NOT NULL,
-       standort VARCHAR(150) NOT NULL
-   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-   ```
+4. Erstellen Sie eine Tabelle in phpMyAdmin. Sie können dafür die Datei cars_seed.sql im Verzeichnis "sql" verwenden.
 
 5. Zugangsdaten in backend/dbconnect.php anpassen
 
@@ -81,11 +69,12 @@ Ein Klick auf "Logo" bringt Sie zurück zur Startseite.
 
 ## Projektstruktur
 
-/assets -> Skripte und Styling
-/backend -> Datenbankverbindung
-/frontend -> Frontend-PHP-Dateien mit Funktionen
-/frontend/views -> Frontend-Dateien ohne Funktionen (reine Darstellung)
-/inc -> Hilfsfunktionen, Header und Footer
+- /assets -> Skripte und Styling
+- /backend -> Datenbankverbindung
+- /frontend -> Frontend-PHP-Dateien mit Funktionen
+- /frontend/views -> Frontend-Dateien ohne Funktionen (reine Darstellung)
+- /inc -> Hilfsfunktionen, Header und Footer
+- /sql -> Verzeichnis für SQL-Skripts
 
 ## Sicherheit
 
@@ -107,6 +96,7 @@ Die Anwendung ist komplett per Tastatur steuerbar.
 ## Mögliche Erweiterungen
 
 - Benutzerverwaltung mit unterschiedlichen Rollen
+- existieren Rollen, sollte dbconnect.php die Rolle nicht mehr hardcodiert enthalten
 - Suchfunktion
 - Paginierung der Ergebnisliste
 - Sortierung nach Nutzereingabe
