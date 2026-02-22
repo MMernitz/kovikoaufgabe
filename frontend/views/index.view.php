@@ -1,0 +1,2 @@
+<h1 class="car-headline">Automarken</h1>
+<segment class="welcome">Sie können hier <a class="welcome-link" href="./new.php">neue Fahrzeuge erfassen</a> oder <a class="welcome-link" href="./list.php">bereits erfasste Fahrzeuge auflisten</a> lassen.</segment>

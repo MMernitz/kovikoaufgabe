@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 165, 0, 0.3);
+}
+
+.app-logo {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: orange;
+  align-content: center;
+}
+
+.app-logo > a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-navigation {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.navigation-item {
+  background-color: orange;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+
+.navigation-item > a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.car-headline,
+.edit-headline,
+.list-headline,
+.new-headline {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.welcome {
+  margin: 0 auto;
+  width: 75%;
+  padding: 4rem;
+  font-size: 1rem;
+  background-color: rgba(255, 165, 0, 0.3);
+  color: black;
+  text-align: center;
+}
+
+.welcome > a {
+  color: black;
+}
+
+.car-form,
+.no-cars {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgba(255, 165, 0, 0.3);
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.no-cars > p > a {
+  color: black;
+}
+
+.form-input {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 1.5rem;
+}
+
+.form-input-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.form-input-item > input {
+  border-radius: 5px;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.reset-action {
+  background-color: red;
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.reset-action:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  color: black;
+}
+
+.submit-action {
+  background-color: green;
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.submit-action:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  color: black;
+}
+
+.list-segment {
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+thead tr th,
+tbody tr td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 165, 0, 0.3);
+}
+
+.list-actions {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.list-actions > li > a {
+  text-decoration: none;
+}
+
+.action-edit,
+.action-delete {
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  box-shadow: 5px 3px 3px grey;
+}
+
+.action-edit {
+  background-color: blueviolet;
+  color: white;
+}
+
+.action-edit > a {
+  color: white;
+}
+
+.action-delete > a {
+  color: black;
+}
+
+.action-edit:hover {
+  background-color: rgba(138, 43, 226, 0.5);
+}
+.action-edit:hover > a {
+  color: black;
+}
+
+.action-delete {
+  background-color: red;
+  color: black;
+}
+
+.action-delete:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.error-box {
+  color: #b30000;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+footer {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
