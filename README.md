@@ -53,7 +53,8 @@ Dabei werden:
 ## Betrieb
 
 Verwenden Sie die Links im Header oder der Indexseite, um neue Fahrzeuge anzulegen oder die bereits existierenden auflisten zu lassen.
-Ein Klick auf "Logo" bringt Sie zurück zur Startseite.
+Ein Klick auf "Logo" bringt Sie zurück zur Startseite. Sollten keine Fahrzeuge in der Datenbank existieren, gibt es einen entsprechenden
+Hinweise mit einem Link zur Erstellseite.
 
 ## Datenbankstruktur
 
