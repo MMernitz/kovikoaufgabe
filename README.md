@@ -98,6 +98,7 @@ Die Anwendung ist komplett per Tastatur steuerbar.
 
 - Benutzerverwaltung mit unterschiedlichen Rollen
 - existieren Rollen, sollte dbconnect.php die Rolle nicht mehr hardcodiert enthalten
+- für den tatsächlichen Einsatz sollte das JavaScript noch minifiziert werden
 - Suchfunktion
 - Paginierung der Ergebnisliste
 - Sortierung nach Nutzereingabe
